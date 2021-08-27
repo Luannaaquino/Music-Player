@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {useState, useEffect} from 'react';
+import GlobalStyle from "./GlobalStyle";
 
 function App() {
+
+  const [song, setSong] = useState([
+    {
+      title: "KITSUNE",
+      artist: "Kitsune",
+      img_src: "./images/song-1.jpg",
+      src: "./music/on-n-on.mp3"
+    },
+    {
+      title: "Love in the Sky",
+      artist: "Eric Godlow",
+      img_src: "./images/song-1.jpg",
+      src: "./music/Love-in-the-Sky.mp3"
+    },
+    {
+      title: "Lovely",
+      artist: "Eric Godlow",
+      img_src: "./images/song-1.jpg",
+      src: "./music/Lovely.mp3"
+    },
+  ]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <GlobalStyle/>
+      <h1>Teste</h1>
+    </>
   );
 }
 
