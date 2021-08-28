@@ -26,12 +26,6 @@ function App() {
       src: "./music/Lo-Fi-Blues.mp3"
     },
     {
-      title: "Onion",
-      artist: "LuKremBo",
-      img_src: "./images/onion.jpg",
-      src: "./music/Onion.mp3"
-    },
-    {
       title: "A Little Bit Of Love",
       artist: "Kitsune",
       img_src: "./images/song-4.jpg",
