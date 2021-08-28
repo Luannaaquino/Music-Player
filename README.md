@@ -3,8 +3,8 @@
 </h1>
 
 ## 📌 Sobre
+O projeto Music Player utiliza aplicações front-end e mobile. Um Player desenvolvido com React, perfeito para você escutar suas musicas preferidas.
 
-O projeto <b>Music Player</b> utiliza aplicações front-end e mobile. Um Player feito desenvolvido com React, perfeito para você pode escutar suas musicas preferidas!
 ---
 
 ## 💻 Tecnologias utilizadas
@@ -19,10 +19,10 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ```bash
 # clonar repositório
-git clone https://github.com/Luannaaquino/Mezzaro.git
+git clone https://github.com/Luannaaquino/Music-Player.git
 
 # entrar no diretório
-cd Mezzaro
+cd Music-Player
 
 # instalar dependências
 yarn install
