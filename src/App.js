@@ -1,14 +1,15 @@
 import React from "react";
 import {useState, useEffect} from 'react';
 import GlobalStyle from "./GlobalStyle";
+import Player from "./components/Player";
 
 function App() {
 
-  const [song, setSong] = useState([
+  const [songs, setSongs] = useState([
     {
       title: "KITSUNE",
       artist: "Kitsune",
-      img_src: "./images/song-1.jpg",
+      img_src: "./images/song-1.jpeg",
       src: "./music/on-n-on.mp3"
     },
     {
@@ -25,10 +26,13 @@ function App() {
     },
   ]);
 
+  const [currentSongIndex, setCurrentSongIndex] = useState(0);
+  const [nextSongIndex, setNextSongIndex] = useState(currentSongIndex+1);
+
   return (
     <>
     <GlobalStyle/>
-      <h1>Teste</h1>
+    <Player song={songs[currentSongIndex]} nextSong={songs[nextSongIndex]} />
     </>
   );
 }
