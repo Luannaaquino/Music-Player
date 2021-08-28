@@ -3,19 +3,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faPause, faForward, faBackward } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components';
 
-export default function Controls() {
+export default function Controls(props) {
 
   return (
     <Container>
-      <button className="skip-btn">
+      <button className="skip-btn" onClick={() => props.SkipSong(false)}>
                 <FontAwesomeIcon icon={faBackward} />
             </button>
-            <button className="play-btn">
-                <FontAwesomeIcon icon={faPlay} />
+            <button className="play-btn" onClick={() => props.setIsPlaying(!props.isPlaying)}>
+                <FontAwesomeIcon icon={props.isPlaying ? faPause : faPlay} />
             </button>
-            <button className="skip-btn">
+            <button className="skip-btn" onClick={() => props.SkipSong()}>
                 <FontAwesomeIcon icon={faForward} />
-            </button>
+        </button>
     </Container>
   );
 }
