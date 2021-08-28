@@ -18,4 +18,27 @@ export default function Player(props) {
 }
 
 const Container = styled.div`
+  display:block;
+  background-color: #313131;
+  padding: 50px;
+  border-radius: 16px;
+
+  h4{
+    color: #FFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  p{
+    color: #AAA;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  p span{
+    font-weight: 400;
+  }
 `
