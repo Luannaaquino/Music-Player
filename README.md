@@ -1,6 +1,5 @@
 <h1 align="center">
     <img alt="Readme" title="Readme" src="./MusicPlayer.gif">
-    https://music-player-one-omega.vercel.app/
 </h1>
 
 ## 📌 Sobre
